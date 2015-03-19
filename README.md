@@ -25,13 +25,13 @@ You can use any library/framework you want to finish newsie. You can also use an
   * get as creative as you'd like
 * build feature for sorting the news items by their meta data
 * build feature for searching for and filtering out news items
-* build feature for removing a news item
-* build out feature to create a news item
-  * validate form before creating
-  * show validation errors to users if any
+
 
 ## Nice to have (optional)
 * make sure to prevent XSS attacks!
+* build out feature to create a news item
+  * validate form before creating
+  * show validation errors to users if any
 
 ## Have-to's
 * however you make a feed-item (li, directive, component, div), be sure to include the `feed-tem` class on it to help Greg help you

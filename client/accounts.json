@@ -131,7 +131,7 @@
       "accountId":16,
       "firstName":"Derek-16",
       "lastName":"Zoolander",
-      "bio":"Male Model Of The Year 2000, 2001. Inventor of Blue Steel and Magnum.",
+      "bio":"Male Model Of The Year 2000, 2001. Inventor of Blue Steel and Magnum. I'm attacking you <script>alert('Make sure to prevent xss attacks!!');</script>",
       "age":35,
       "image":"http://mcgrelio.com/gallery/var/albums/vacanze/capodanno2004/capodanno2004_bluesteel/derek.jpg?m=1286923065"
    },

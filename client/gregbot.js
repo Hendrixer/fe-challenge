@@ -78,7 +78,9 @@
         messages: [
           'Call Greg.help() with one of the args below to find out more.',
           '   \u2738 feed',
-          '   \u2738 filter'
+          '   \u2738 filter',
+          '   \u2738 sample'
+
         ],
         css: 'color:#1B5E20; text-align: center; margin-left: 50px'
       },
@@ -113,31 +115,6 @@
           'the data looks like. Greg.help(\'sample\')'
         ],
         css: 'text-align: center; margin-left: 50px;'
-      },
-
-      sample: {
-        type: 'log',
-        messages: [
-          'Events',
-          {
-            "accountId":7,
-            "event":{
-               "eventType":"Project Completion",
-               "snippet":"Completed project 0!"
-            },
-            "time":1434265200000
-          },
-          'Accounts',
-          {
-            "accountId":0,
-            "firstName":"Derek-0",
-            "lastName":"Zoolander",
-            "bio":"Male Model Of The Year 2000, 2001. Inventor of Blue Steel and Magnum.",
-            "age":35,
-            "image":"http://mcgrelio.com/gallery/var/albums/vacanze/capodanno2004/capodanno2004_bluesteel/derek.jpg?m=1286923065"
-          }
-        ],
-        css: 'text-align: center; margin-left: 50px;'
       }
     },
 
@@ -145,6 +122,26 @@
       type: 'warn',
       messages: [],
       css: 'text-align: center; margin-left: 50px;'
+    }
+  };
+
+  var sample = {
+    events: {
+      "accountId":7,
+      "event":{
+         "eventType":"Project Completion",
+         "snippet":"Completed project 0!"
+      },
+      "time":1434265200000
+    },
+
+    accounts: {
+      "accountId":0,
+      "firstName":"Derek-0",
+      "lastName":"Zoolander",
+      "bio":"Male Model Of The Year 2000, 2001. Inventor of Blue Steel and Magnum.",
+      "age":35,
+      "image":"http://mcgrelio.com/gallery/var/albums/vacanze/capodanno2004/capodanno2004_bluesteel/derek.jpg?m=1286923065"
     }
   };
 
@@ -215,6 +212,11 @@
 
   Greg.help = function(what) {
     what = what || 'help';
+    if (what === 'sample') {
+      console.log('Events', sample.events);
+      console.log('Accounts', sample.accounts);
+      return '(☞ຈل͜ຈ)☞';
+    }
     var face = '';
     var message = messages.commands[what];
     if (!message) {

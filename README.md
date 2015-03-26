@@ -34,7 +34,7 @@ You can use any library/framework you want to finish newsie. You can also use an
   * show validation errors to users if any
 
 ## Have-to's
-* however you make a feed-item (li, directive, component, div), be sure to include the `feed-tem` class on it to help Greg help you
+* however you make a feed-item (li, directive, component, div), be sure to include the `feed-item` class on it to help Greg help you
 * be awesome
 
 ## Tips

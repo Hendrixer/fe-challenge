@@ -4,7 +4,7 @@
 	- [Objectives](#objectives)
 	- [Have-to's](#have-tos)
 	- [Tips](#tips)
-<!-- /TOC -->
+
 
 # Newsie challenge
 
